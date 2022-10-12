@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const Persona2 = {
+        nombre: "Maria",
+        apellido: "Suarez",
+        edad: 30,
+        casado: false,
+        hijo: {
+          nombreHijo: "Juan",
+        },
+      };
+
+      const { nombreHijo } = Persona2.hijo;
+      console.log(nombreHijo);
+
+      const objeto = {
+        primerNombre: "Karol",
+        segundoNombre: "Vanessa",
+        primerApellido: "Cardenas",
+        segundoApellido: "Chavarrio",
+        casado: true,
+        numeroTelefonoMovil: "3138363576",
+        numeroTelefonoFijo: "33335415",
+        residencia: {
+          pais: "Colombia",
+          departamento: "Cundinamarca",
+          ciudad: "Bogotá",
+        },
+        direccion: {
+          calle: "17",
+          carrera: "15",
+          numero: "18",
+        },
+      };
+
+      const { primerNombre, primerApellido, residencia } = objeto;
+      console.log(
+        `La señora ${primerNombre + " " + primerApellido} vive en ${
+          residencia.ciudad + " " + residencia.departamento
+        } de ${residencia.pais}`
+      );
+    </script>
+  </body>
+</html>
