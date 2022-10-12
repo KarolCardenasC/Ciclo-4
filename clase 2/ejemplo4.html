@@ -12,11 +12,14 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body style="background: rgba(255, 232, 182, 0.938)">
     <!-- Barra de Navegación-->
     <nav class="navbar navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a
+          class="navbar-brand"
+          href="https://getbootstrap.com/docs/5.0/components/navbar/"
+        >
           <img
             src="matematicas.png"
             alt=""
@@ -28,8 +31,15 @@
         </a>
       </div>
     </nav>
-    <br />
-    <div class="card text-white bg-dark mb-3" style="max-width: 18rem">
+    <div
+      class="card text-white bg-dark m-lg-4"
+      style="max-width: 18rem; margin-top: 20px"
+    >
+      <img
+        src="https://i.ytimg.com/vi/ybFRxtTqgA0/maxresdefault.jpg"
+        class="card-img-top"
+        alt="area"
+      />
       <div class="card-body">
         <h5 class="card-title">El área de una circunferencia es:</h5>
         <span id="areaCirculo"></span>
@@ -38,8 +48,8 @@
 
     <script>
       let pi = 3.1416;
-      let radio;
-      radio = prompt("Ingrese por favor el radio");
+      let radio = 5;
+      //radio = prompt("Ingrese por favor el radio");
       let area = pi * (radio * radio);
       //alert("El Área de una circunferencia es: " + area);
       //Uso del DOM HTML
