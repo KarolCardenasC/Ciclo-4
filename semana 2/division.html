@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let div1 = parseInt(prompt("Escriba el número que quiere dividir"));
+      let div2 = parseInt(
+        prompt("Escriba el número por el que quiere dividir el número anterior")
+      );
+      let resultado = div1 / div2;
+      if (div2 < 0) {
+        div2 = -1;
+      }
+      console.log(div2);
+      switch (div2) {
+        case 0:
+          document.writeln("No se puede dividir un número entre cero");
+          break;
+        case -1:
+          document.writeln("No se puede dividir, el número es negativo");
+          break;
+        default:
+          document.writeln("El resultado es: " + resultado);
+          break;
+      }
+    </script>
+  </body>
+</html>
